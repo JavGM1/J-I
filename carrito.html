@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Logo J&I Muebles" width="80" height="60"
+                    class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Catálogo</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Muebles
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="filter-living">Living</a></li>
+                            <li><a class="dropdown-item" href="#" id="filter-oficina">Oficina</a></li>
+                            <li><a class="dropdown-item" href="#" id="filter-bano">Baño</a></li>
+                            <li><a class="dropdown-item" href="#" id="filter-todos">Todos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contacto</a>
+                    </li>
+                </ul>
+                <div class="mx-auto search-bar-container" style="max-width: 350px;">
+                    <form class="d-flex mb-2 mb-md-0" role="search" id="form-busqueda">
+                        <input class="form-control me-2" type="search" placeholder="Introduce un término de búsqueda"
+                            aria-label="Search" id="busqueda-muebles" />
+                        <button class="btn custom-search-btn" type="submit">Buscar</button>
+                    </form>
+                </div>
+                <div class="d-flex align-items-center ms-auto">
+                    <div class="dropdown mb-2 mb-md-0 me-md-2">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="loginDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Inicia sesión
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="loginDropdown">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#loginModal">Iniciar sesión</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#registerModal">Registrar</a></li>
+                            <li><a class="dropdown-item" href="#">Mi cuenta</a></li>
+                        </ul>
+                    </div>
+                    <a href="carrito.html" class="btn btn-outline-secondary" title="Carrito de compras">
+                        <i class="bi bi-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin Navbar -->
+
+    <div class="container text-center mt-5">
+        <h1>¡Tu carrito está vacío!</h1>
+        <p class="lead">Parece que no has añadido ningún producto a tu carrito aún.</p>
+        <a href="index.html" class="btn btn-volver-catalogo mt-3">Volver al catálogo</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

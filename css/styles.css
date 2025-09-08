@@ -3,13 +3,13 @@
 }
 
 #loginDropdown.btn-primary {
-    background-color: #CBB79A; /* Cambia este color por el que prefieras */
+    background-color: #CBB79A; 
     border-color: #CBB79A;
     color: #fff;
 }
 #loginDropdown.btn-primary:hover, 
 #loginDropdown.btn-primary:focus {
-    background-color: #cfb07f; /* Cambia este color por el que prefieras */
+    background-color: #cfb07f; 
     border-color: #CBB79A;
     color: #fff;
 }
@@ -23,12 +23,12 @@ body {
 }
 
 .custom-search-btn {
-    background-color: #b69975 !important; /* color de fondo del botón */
-    border-color: #b09e7a !important;     /* color del borde del botón */
-    color: #fff !important;               /* color del texto */
+    background-color: #b69975 !important; 
+    border-color: #b09e7a !important;     
+    color: #fff !important;               
     border-width: 2px !important;
     border-style: solid !important;
-    box-shadow: none !important;          /* elimina sombras de Bootstrap */
+    box-shadow: none !important;         
 }
 .custom-search-btn:hover,
 .custom-search-btn:focus {
@@ -42,13 +42,13 @@ body {
 }
 
 .imgCarousel {
-    width: 80vw;         /* Ajusta el ancho, por ejemplo 70% del viewport */
-    max-width: 1000px;    /* Máximo ancho en píxeles */
-    height: 400px;       /* Alto fijo para forma rectangular */
-    margin: 40px auto;   /* Centra el carrusel horizontalmente y agrega margen arriba/abajo */
+    width: 80vw;         
+    max-width: 1000px;    
+    height: 400px;       
+    margin: 40px auto;  
     display: block;
-    object-fit: cover;   /* Asegura que la imagen se recorte bien dentro del rectángulo */
-    border-radius: 18px; /* Opcional: bordes redondeados */
+    object-fit: cover;   
+    border-radius: 18px; 
 }
 
 .custom-carousel {
@@ -71,4 +71,17 @@ body {
         min-width: 1500px !important;
         max-width: 2000px !important;
     }
+}
+
+
+.btn.btn-volver-catalogo {
+    background-color: #CBB79A !important;
+    border-color: #CBB79A !important;
+    color: #fff !important;
+}
+.btn.btn-volver-catalogo:hover,
+.btn.btn-volver-catalogo:focus {
+    background-color: #cfb07f !important;
+    border-color: #CBB79A !important;
+    color: #fff !important;
 }
