@@ -24,6 +24,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- ...dentro de <div class="collapse navbar-collapse" id="navbarSupportedContent"> ... -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
@@ -46,12 +47,16 @@
                         <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contacto</a>
                     </li>
                 </ul>
-                <div class="w-100 d-flex flex-column flex-md-row align-items-center">
-                    <form class="d-flex flex-grow-1 mb-2 mb-md-0 me-md-2" role="search" style="max-width: 350px;">
+                <!-- Barra de búsqueda centrada -->
+                <div class="mx-auto search-bar-container" style="max-width: 350px;">
+                    <form class="d-flex mb-2 mb-md-0" role="search">
                         <input class="form-control me-2" type="search" placeholder="Introduce un término de búsqueda"
                             aria-label="Search" />
                         <button class="btn custom-search-btn" type="submit">Buscar</button>
                     </form>
+                </div>
+                <!-- Botones a la derecha -->
+                <div class="d-flex align-items-center ms-auto">
                     <div class="dropdown mb-2 mb-md-0 me-md-2">
                         <button class="btn btn-primary dropdown-toggle" type="button" id="loginDropdown"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -122,7 +127,7 @@
                         <h5 class="card-title">Escritorio de madera</h5>
                         <p class="card-text precio-mueble">$129.990</p>
                         <button class="btn btn-outline-primary" data-bs-toggle="modal"
-                            data-bs-target="#modalMueble1">Ver especificaciones</button>
+                            data-bs-target="#modalMueble1">Ver detalles</button>
                     </div>
                 </div>
             </div>
@@ -134,7 +139,7 @@
                         <h5 class="card-title">Ropero madera</h5>
                         <p class="card-text precio-mueble">$249.990</p>
                         <button class="btn btn-outline-primary" data-bs-toggle="modal"
-                            data-bs-target="#modalMueble2">Ver especificaciones</button>
+                            data-bs-target="#modalMueble2">Ver detalles</button>
                     </div>
                 </div>
             </div>
@@ -146,7 +151,7 @@
                         <h5 class="card-title">Combo botiquín + Mueble</h5>
                         <p class="card-text precio-mueble">$299.990</p>
                         <button class="btn btn-outline-primary" data-bs-toggle="modal"
-                            data-bs-target="#modalMueble3">Ver especificaciones</button>
+                            data-bs-target="#modalMueble3">Ver detalles</button>
                     </div>
                 </div>
             </div>
@@ -158,7 +163,7 @@
                         <h5 class="card-title">Silla Gamer</h5>
                         <p class="card-text precio-mueble">$89.990</p>
                         <button class="btn btn-outline-primary" data-bs-toggle="modal"
-                            data-bs-target="#modalMueble4">Ver especificaciones</button>
+                            data-bs-target="#modalMueble4">Ver detalles</button>
                     </div>
                 </div>
             </div>
@@ -170,7 +175,7 @@
                         <h5 class="card-title">Mueble baño dark grey</h5>
                         <p class="card-text precio-mueble">$140.990</p>
                         <button class="btn btn-outline-primary" data-bs-toggle="modal"
-                            data-bs-target="#modalMueble5">Ver especificaciones</button>
+                            data-bs-target="#modalMueble5">Ver detalles</button>
                     </div>
                 </div>
             </div>
@@ -182,7 +187,7 @@
                         <h5 class="card-title">Sofá cama</h5>
                         <p class="card-text precio-mueble">$199.990</p>
                         <button class="btn btn-outline-primary" data-bs-toggle="modal"
-                            data-bs-target="#modalMueble6">Ver especificaciones</button>
+                            data-bs-target="#modalMueble6">Ver detalles</button>
                     </div>
                 </div>
             </div>
@@ -194,7 +199,7 @@
                         <h5 class="card-title">Estantería</h5>
                         <p class="card-text precio-mueble">$119.990</p>
                         <button class="btn btn-outline-primary" data-bs-toggle="modal"
-                            data-bs-target="#modalMueble7">Ver especificaciones</button>
+                            data-bs-target="#modalMueble7">Ver detalles</button>
                     </div>
                 </div>
             </div>
@@ -206,7 +211,7 @@
                         <h5 class="card-title">Rack TV</h5>
                         <p class="card-text precio-mueble">$69.990</p>
                         <button class="btn btn-outline-primary" data-bs-toggle="modal"
-                            data-bs-target="#modalMueble8">Ver especificaciones</button>
+                            data-bs-target="#modalMueble8">Ver detalles</button>
                     </div>
                 </div>
             </div>
@@ -258,15 +263,15 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalMueble3Label">Nombre del Mueble 3</h5>
+                    <h5 class="modal-title" id="modalMueble3Label">Combo botiquín + Mueble</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <ul>
-                        <li>Material: ...</li>
-                        <li>Color: ...</li>
-                        <li>Dimensiones: ...</li>
-                        <li>Peso: ...</li>
+                        <li>Material: Madera</li>
+                        <li>Color: Nogal, Blanco</li>
+                        <li>Dimensiones: 120x60x75cm</li>
+                        <li>Peso: 50kg</li>
                     </ul>
                 </div>
             </div>
@@ -294,15 +299,15 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalMueble5Label">Mueble 5</h5>
+                    <h5 class="modal-title" id="modalMueble5Label">Mueble baño dark grey</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <ul>
-                        <li>Material: Por definir</li>
-                        <li>Color: Por definir</li>
-                        <li>Dimensiones: Por definir</li>
-                        <li>Peso: Por definir</li>
+                        <li>Material: Metal</li>
+                        <li>Color: Gris Oscuro</li>
+                        <li>Dimensiones: 50x71x46.5cm</li>
+                        <li>Peso: 45kg</li>
                     </ul>
                 </div>
             </div>
@@ -312,15 +317,15 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalMueble6Label">Mueble 6</h5>
+                    <h5 class="modal-title" id="modalMueble6Label">Sofá Cama grís</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <ul>
-                        <li>Material: Por definir</li>
-                        <li>Color: Por definir</li>
-                        <li>Dimensiones: Por definir</li>
-                        <li>Peso: Por definir</li>
+                        <li>Material: Terciopelo</li>
+                        <li>Color: Gris</li>
+                        <li>Dimensiones: 227x146x92</li>
+                        <li>Peso: Hasta 250kg</li>
                     </ul>
                 </div>
             </div>
@@ -330,15 +335,15 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalMueble7Label">Mueble 7</h5>
+                    <h5 class="modal-title" id="modalMueble7Label">Estantería</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <ul>
-                        <li>Material: Por definir</li>
-                        <li>Color: Por definir</li>
-                        <li>Dimensiones: Por definir</li>
-                        <li>Peso: Por definir</li>
+                        <li>Material: Madera, Acero inoxidable</li>
+                        <li>Color: Amaderado</li>
+                        <li>Dimensiones: 166x75x30c</li>
+                        <li>Peso: 50kg</li>
                     </ul>
                 </div>
             </div>
@@ -348,15 +353,15 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalMueble8Label">Mueble 8</h5>
+                    <h5 class="modal-title" id="modalMueble8Label">Rack TV</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <ul>
-                        <li>Material: Por definir</li>
-                        <li>Color: Por definir</li>
-                        <li>Dimensiones: Por definir</li>
-                        <li>Peso: Por definir</li>
+                        <li>Material: Madera/li>
+                        <li>Color: Amaderado</li>
+                        <li>Dimensiones: 166x75x30cm</li>
+                        <li>Peso: 50kg</li>
                     </ul>
                 </div>
             </div>

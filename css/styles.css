@@ -65,3 +65,10 @@ body {
 .custom-carousel .carousel-control-next {
     right: 0;
 }
+
+@media (min-width: 768px) {
+    .search-bar-container {
+        min-width: 1500px !important;
+        max-width: 2000px !important;
+    }
+}
